@@ -1,3 +1,10 @@
+.apple {
+  /*border: 1px solid black;*/
+  /*color: white;*/
+  /*background-color: #FFDBA2;*/
+  border-radius: 10px;
+}
+
 /*------------------------------------*\
 	COMMONS CLASSES
 \*------------------------------------*/
@@ -49,7 +56,7 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-
+  background-color: rgba(36, 50, 59, 1);
     background-image: url('images/pukaki.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,6 +69,15 @@ header .container-fluid
   position: fixed;
   right: 5%;
   z-index: 1;
+}
+
+.profileIcons {
+  color: white;
+}
+
+#emailIcon {
+  position: relative;
+  top: -3px;
 }
 
 .hamburger
@@ -133,7 +149,6 @@ header .container-fluid
 }
 
 .statisticLink {
-  color: white;
   text-transform: none;
   font-size: 10px;
 }
@@ -144,7 +159,6 @@ header .container-fluid
 }
 
 .statisticLink:visited {
-  color: white;
   text-decoration: none;
 }
 
@@ -180,6 +194,10 @@ header .container-fluid
   margin-top: 20px;
 }
 
+#flightStatsURL:hover {
+  text-decoration: none;
+}
+
 .opaline
 {
     padding-top: 3em;
@@ -211,11 +229,39 @@ header .container-fluid
 }
 
 .story .container-fluid {
-  background-color: #FF486C;
+  background-color: #F285A2;
 }
 
 .gallery {
-  background-color: #dddddd;
+  background-color: #FF9059;
+}
+
+#miniProjectsIntro {
+  margin: 100px auto;
+}
+
+#pacManGif {
+  border-radius: 10px;
+}
+
+#tttGif {
+  border-radius: 10px;
+}
+
+#guessGif {
+  border-radius: 10px;
+}
+
+.otherProjectsHeader {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.otherProjectLinks{
+  color: grey;
+  position: relative;
+  top: -25px;
 }
 
 .prefooter .container-fluid {
@@ -238,6 +284,8 @@ header .container-fluid
     color: #FFFFFF;
 }
 
+
+
 /*------------------------------------*\
 	FOOTER
 \*------------------------------------*/
@@ -258,9 +306,4 @@ footer h6,
 footer p
 {
     color: #FFFFFF;
-}
-
-.social
-{
-    padding-top: 50px;
 }

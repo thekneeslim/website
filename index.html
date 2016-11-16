@@ -44,7 +44,6 @@
             <li><a href="#gaLaunchPad">GA Launch Pad</a></li>
             <li><a href="#trackMeNot">Track Me Not</a></li>
             <li><a href="#projects">Other Projects</a></li>
-            <li><a href="#contact">Get in Touch!</a></li>
         </ul>
       </nav>
 
@@ -66,6 +65,11 @@
                       <h4>CHANGE IS THE ONLY CONSTANT!</h4>
                         <h1><strong>DENISE LIM</strong></h1>
                         <p>Tax Accountant turned programmer<p>
+                          <a target="_blank" href="https://www.linkedin.com/in/denise-lim-17985a4a"><i class="typcn typcn-social-linkedin-circular profileIcons"></i></a>
+                          <a id="emailIcon" href="mailto:denise.lim.sh@gmail.com"><i class="typcn typcn-mail profileIcons"></i></a>
+                          <a target="_blank" href="https://github.com/thekneeslim"><i class="typcn typcn-social-github-circular profileIcons"></i></a>
+                          <br>
+                          <br>
                           <a class="btn btn-primary btn-lg" href="#about">About Me</a>
                           <a class="btn btn-lg btn-danger" href="#mySpot">Portfolio</a>
                         </p>
@@ -236,7 +240,7 @@
                                     <br>
                                     <div class="row">
                                       <p><b>API Drawn From:</b></p>
-                                      <p><a href="https://developer.flightstats.com/">Flightstats</a></p>
+                                      <p><a id="flightStatsURL" href="https://developer.flightstats.com/">Flightstats</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -257,104 +261,136 @@
                 </div>
             </div>
         </section>
+        <section class="clients wow fadeInUp" data-wow-delay="300ms">
+            <div class="container">
+                <div class="row text-center">
+                    <h3 id="miniProjectsIntro">Now onto my mini projects...</h3>
+                </div>
+            </div>
+        </section>
         <section id="projects" class="gallery wow fadeInUp" data-wow-delay="300ms">
             <div class="container">
                 <div class="row">
                     <div class="masonry image-gallery">
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div>
-                        <div class="item item-width2">
-                            <a href="https://unsplash.it/1000/600?image=529">
-                              <img src="https://unsplash.it/600/300?image=529" alt="" />
-                            </a>
+                        <div class="item item-width2 apple text-center">
+                          <img id="pacManGif" data-toggle="modal" data-target="#pacManModal" src="https://media.giphy.com/media/zA2aQyUmncvtK/giphy.gif" data-absolute_url="/gifs/zA2aQyUmncvtK" data-width="480" data-height="268" data-animated="https://media.giphy.com/media/zA2aQyUmncvtK/giphy.gif" data-still="https://media.giphy.com/media/zA2aQyUmncvtK/200_s.gif" data-mp4_url="https://media.giphy.com/media/zA2aQyUmncvtK/giphy.mp4" alt="None animated GIF" style="height: auto; width: 90%; text-align: center">
                         </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/1000/600?image=523">
-                              <img src="https://unsplash.it/320/776?image=523" alt="" />
-                            </a>
+                        <div class="item apple text-center">
+                          <img id="tttGif" data-toggle="modal" data-target="#tttModal" src="https://media.giphy.com/media/dqZCFtkt7weac/giphy.gif" data-absolute_url="/gifs/dqZCFtkt7weac" data-width="480" data-height="268" data-animated="https://media.giphy.com/media/dqZCFtkt7weac/giphy.gif" data-still="https://media.giphy.com/media/dqZCFtkt7weac/200_s.gif" data-mp4_url="https://media.giphy.com/media/dqZCFtkt7weac/giphy.mp4" alt="None animated GIF" style="height: auto; width: 90%; text-align: center">
                         </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/600/1000?image=503">
-                              <img src="https://unsplash.it/500/800?image=503" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/1000/600?image=505">
-                              <img src="https://unsplash.it/400/400?image=505" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/800/800?image=454">
-                              <img src="https://unsplash.it/4403/2476?image=454" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/800/800?image=515">
-                              <img src="https://unsplash.it/585/439?image=515" alt="" />
-                            </a>
-                        </div>
-                        <div class="item item-width2">
-                            <a href="https://unsplash.it/1000/600?image=451">
-                              <img src="https://unsplash.it/600/140?image=451" alt="" />
-                            </a>
+                        <div class="item apple text-center">
+                          <img id="guessGif" data-toggle="modal" data-target="#guessModal" src="https://media.giphy.com/media/t3jY2NepMA0OA/giphy.gif" data-absolute_url="/gifs/dqZCFtkt7weac" data-width="480" data-height="268" data-animated="https://media.giphy.com/media/t3jY2NepMA0OA/giphy.gif" data-still="https://media.giphy.com/media/t3jY2NepMA0OA/200_s.gif" data-mp4_url="https://media.giphy.com/media/t3jY2NepMA0OA/giphy.mp4" alt="None animated GIF" style="height: auto; width: 90%; text-align: center">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="clients wow fadeInUp" data-wow-delay="300ms">
-            <div class="container">
+
+        <!-- MODALS -->
+        <!-- Pacman -->
+        <div class="modal fade" id="pacManModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">PacMan</h4>
+              </div>
+              <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-01.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-02.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-03.png" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-04.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-05.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-06.png" class="img-responsive" />
-                    </div>
+                  <div class="col-md-10 col-md-offset-1">
+                    <p>Everyone loves a retro game. When tasked to build a game for Project 1, I thought, why not try PacMan?</p>
+                    <br>
+                    <p><b>Build using:</b></p>
+                    <p>Canvas</p>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Maecenas sed diam eget risus varius<br> blandit sit amet non magna.</h3>
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email Here...">
-                                    <br>
-                                    <button type="button" class="btn btn-danger">Submit Newsletter</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="modal-footer">
+                <div class="row text-center">
+                  <a class="otherProjectLinks" href="https://github.com/thekneeslim/PacMan"><span class="typcn typcn-social-github-circular x3"></span></a>
+                  <a class="otherProjectLinks" href="https://thekneeslim.github.io/PacMan/"><span class="typcn typcn-social-dribbble x3"></span></a>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <!-- Tic Tac Toe -->
+        <div class="modal fade" id="tttModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Tic Tac Toe</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <p>First every app built!</p>
+                    <br>
+                    <p><b>Build using:</b></p>
+                    <p>HTML, CSS, Javascript</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="row text-center">
+                  <a class="otherProjectLinks" href="https://github.com/thekneeslim/tictactoe"><span class="typcn typcn-social-github-circular x3"></span></a>
+                  <a class="otherProjectLinks" href="https://thekneeslim.github.io/tictactoe/"><span class="typcn typcn-social-dribbble x3"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Guess -->
+        <div class="modal fade" id="guessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Guess Me If You Can</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <p>Explorative app using Socket IO.</p>
+                    <br>
+                    <p><b>Build using:</b></p>
+                    <p>Node JS</p>
+                    <p>Socket IO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="row text-center">
+                  <a class="otherProjectLinks" href="https://github.com/thekneeslim/mini-socket-game"><span class="typcn typcn-social-github-circular x3"></span></a>
+                  <a class="otherProjectLinks" href="https://guess-me-if-you-can.herokuapp.com/"><span class="typcn typcn-social-dribbble x3"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h3>Your Logo</h3>
-                        <p>© 2016 Your Company. Designed and Developed by <a target="_blank" href="http://www.themeinthebox.com">ThemeintheBox.com</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="text-right social"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i><i class="typcn typcn-social-github-circular"></i><i class="typcn typcn-social-dribbble-circular"></i></p>
+                    <div class="col-md-4 col-md-offset-8">
+                        <p class="text-right">
+                          <a href="mailto:denise.lim.sh@gmail.com"><i class="typcn typcn-mail"></i></a>
+                          <a target="_blank" href="https://www.linkedin.com/in/denise-lim-17985a4a"><i class="typcn typcn-social-linkedin-circular"></i></a>
+                          <a target="_blank" href="https://github.com/thekneeslim"><i class="typcn typcn-social-github-circular"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
