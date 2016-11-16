@@ -49,12 +49,19 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-    /*background-image: url('https://unsplash.it/2560/1707?image=961');*/
+
     background-image: url('images/pukaki.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     padding-top: 36px;
+}
+
+#hamburgerMenu {
+  position: fixed;
+  right: 5%;
+  z-index: 1;
 }
 
 .hamburger
@@ -120,13 +127,9 @@ header .container-fluid
 	SECTIONS
 \*------------------------------------*/
 
-.number .container-fluid
-{
-    /*background-image: url('https://unsplash.it/3000/2000?image=685');*/
-    background-color: rgb(102,102,102)
-    /*background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;*/
+.number .container-fluid {
+    /*background-color: rgb(102,102,102)*/
+    background-color: #0BAEDB;
 }
 
 .statisticLink {
@@ -159,26 +162,29 @@ header .container-fluid
   vertical-align: middle;
 }
 
-#mySpotHeader {
+.projectHeaders {
   color: white;
   padding-top: 10px;
 }
 
 #mySpotGiphy {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
 #mySpotDescription {
   color: white;
-  padding-bottom: 50px;
+}
+
+#trackMeNotGiphy {
+  margin-top: 20px;
 }
 
 .opaline
 {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: rgba(128, 215, 247, 0.660);
+    background-color: rgba(0,0,0,0.6)
 }
 
 .opaline h1,
@@ -200,30 +206,23 @@ header .container-fluid
     border: 1px solid #FFF;
 }
 
-.boxes .odometer.odometer-theme-default
-{
+.boxes .odometer.odometer-theme-default {
   font-family: 'Roboto Slab', serif;
 }
 
-.story .container-fluid
-{
-    background-image: url('https://unsplash.it/3000/2000?image=531');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.story .container-fluid {
+  background-color: #FF486C;
 }
 
-.gallery
-{
-    background-color: #dddddd;
+.gallery {
+  background-color: #dddddd;
 }
 
-.prefooter .container-fluid
-{
-    background: linear-gradient(
+.prefooter .container-fluid {
+  background: linear-gradient(
       rgba(33, 37, 43, 0.6),
       rgba(33, 37, 43, 0.6)
-    ),
+),
 
     url(https://unsplash.it/4000/3000?image=528);
 }

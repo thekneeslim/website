@@ -55,20 +55,17 @@
             <div class="container-fluid">
                 <!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="hamburgerMenu">
                         <div class="col-md-3 col-xs-10">
-
                         </div>
                         <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
                           <div class="menu-btn"><span class="hamburger">&#9776;</span></div>
                         </div>
                     </div>
                     <div class="jumbotron" id="jumbotronButtonsDiv">
-                      <h3>CHANGE IS THE ONLY CONSTANT!</h3>
+                      <h4>CHANGE IS THE ONLY CONSTANT!</h4>
                         <h1><strong>DENISE LIM</strong></h1>
-                        <p>Tax Accountant turned programmer | <br>
-                          Advocate of life long learning | Community Servant</p>
-                        <p>
+                        <p>Tax Accountant turned programmer<p>
                           <a class="btn btn-primary btn-lg" href="#about">About Me</a>
                           <a class="btn btn-lg btn-danger" href="#mySpot">Portfolio</a>
                         </p>
@@ -137,11 +134,9 @@
         <section id="mySpot" class="number wow fadeInUp" data-wow-delay="300ms">
             <div class="container-fluid">
                 <div class="container">
-                    <div class="row text-center">
-                      <h2 id="mySpotHeader">My Spot</h2>
-                    </div>
                     <div class="row">
                       <div class="col-md-5">
+                        <h2 class="projectHeaders">My Spot</h2>
                         <div class="row" id="mySpotGiphy">
                           <img id="gif" class="gif" src="https://media.giphy.com/media/ESqZ3bGfkA7aU/giphy.gif" data-absolute_url="/gifs/ESqZ3bGfkA7aU" data-width="480" data-height="auto" data-animated="https://media.giphy.com/media/ESqZ3bGfkA7aU/giphy.gif" data-still="https://media.giphy.com/media/5HBrcr6iyV9UQ/200_s.gif" data-mp4_url="https://media.giphy.com/media/5HBrcr6iyV9UQ/giphy.mp4" alt="None animated GIF" style="height: auto; width: 100%;">
                         </div>
@@ -160,7 +155,7 @@
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
                                   <div class="row">
-                                    <h5>What is your place is society?</h5>
+                                    <h5>What is your place in society?</h5>
                                     <p>This project serves to provide a platform to bring Schools and NPOs together to conduct community service events and activities.</p>
                                   </div>
                                 </div>
@@ -180,7 +175,7 @@
                             </div>
                             <div class="row text-center">
                               <a class="projectLinks" target="_blank" href="https://github.com/blueyoghurt/project4"><span class="typcn typcn-social-github-circular x3"></span></a>
-                              <a class="projectLinks" target="_blank" href="#"><span class="typcn typcn-social-dribbble x3"></span></a>
+                              <a class="projectLinks" target="_blank" href="https://myspot-sg.herokuapp.com/"><span class="typcn typcn-social-dribbble x3"></span></a>
                             </div>
                         </div>
                     </div>
@@ -194,8 +189,11 @@
                     <h2>GA Launch Pad</h2>
                   </div>
                     <div class="col-md-6">
+                      <div class="row">
                         <p>As it stands, General Assembly only has GA Profiles which host the database of all GA Alumni - there is no one site where potential hires can view the graduating students' profile by batch.</p>
                         <p>This app therefore serves to bridge this gap by introductinga platform which summarises the profiles of all graduating students.</p>
+                      </div>
+                        <br>
                         <div class="row">
                           <div class="col-md-6">
                             <p><b>Group project by:</b></p>
@@ -218,20 +216,42 @@
             </div>
         </section>
         <section id="trackMeNot" class="story wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .story .container-fluid [approximately row 141] -->
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 opaline">
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <p class="lead"><i>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <p><i>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <h6 class="lead"> – Fermentum Dapibus</h6>
-                                    <p><small>Nibh Etiam Risus Bibendum<br>
-        Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+                                  <div class="row">
+                                    <p class="lead"><i>WHY AREN'T PEOPLE FASCINATED BY AIR TRAFFIC CONTROLLERS?</i></p>
+                                    <p>I have always been fascinated by planes, and I absolutely love watching plane crash investigations.<p>
+                                      <p>When introduced to APIs, I thought, why not build an app that observes the air traffic around the world?</p>
+                                  </div>
+                                  <br>
+                                    <div class="row">
+                                      <p><b>Built on:</b></p>
+                                      <p>NodeJS/Express</p>
+                                      <p>Leaflet</p>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <p><b>API Drawn From:</b></p>
+                                      <p><a href="https://developer.flightstats.com/">Flightstats</a></p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="row text-center">
+                            <h2 class="projectHeaders">Track Me Not</h2>
+                            <div class="row" class="trackMeNotGiphy">
+                              <img id="gif" class="gif" src="https://media.giphy.com/media/KNNcSLjVvY0MM/giphy.gif" data-absolute_url="/gifs/ESqZ3bGfkA7aU" data-width="480" data-height="auto" data-animated="https://media.giphy.com/media/KNNcSLjVvY0MM/giphy.gif" data-still="https://media.giphy.com/media/KNNcSLjVvY0MM/200_s.gif" data-mp4_url="https://media.giphy.com/media/KNNcSLjVvY0MM/giphy.mp4" alt="None animated GIF" style="height: auto; width: 100%;">
+                            </div>
+                            <div class="row text-center">
+                              <a class="projectLinks" target="_blank" href="https://github.com/thekneeslim/project_two"><span class="typcn typcn-social-github-circular x3"></span></a>
+                              <a class="projectLinks" target="_blank" href="https://trackmenot.herokuapp.com/"><span class="typcn typcn-social-dribbble x3"></span></a>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
