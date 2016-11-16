@@ -159,6 +159,21 @@ header .container-fluid
   vertical-align: middle;
 }
 
+#mySpotHeader {
+  color: white;
+  padding-top: 10px;
+}
+
+#mySpotGiphy {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#mySpotDescription {
+  color: white;
+  padding-bottom: 50px;
+}
+
 .opaline
 {
     padding-top: 3em;
